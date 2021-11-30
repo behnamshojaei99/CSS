@@ -1,0 +1,16 @@
+.square {
+    width: 250px;
+    text-align: center;
+    border: 2px solid #D34E47;
+    height: 250px;
+}
+
+.square2 {
+    margin-top: 10px;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #19676E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

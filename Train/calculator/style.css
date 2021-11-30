@@ -1,0 +1,125 @@
+
+@font-face {
+    font-family: DigitalNumbers;
+    src: url("DigitalNumbers.woff") format('woff');
+}
+@font-face {
+    font-family: RobotoCondensed;
+    src: url("RobotoCondensed.woff") format('woff');
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    height: 100vh;
+}
+
+.key {
+    font-size: 1.5em;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#result {
+    text-align: right;
+    font-size: 3.5em;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EEE;
+    color: #444;
+    font-family: DigitalNumbers;
+    height: 28%;
+}
+#app {
+    min-height: 280px;
+    height: 70%;
+    max-width: 580px;
+    width: 80%;
+}
+#keypad {
+    height: 72%;
+    color: #DDD;
+    font-family: RobotoCondensed;
+    display: flex;
+}
+
+#nums {
+    width: 54%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+#nums .key:nth-child(odd) {
+    background-color: #095057;
+}
+
+#nums .key:nth-child(even) {
+    background-color: #19676E;
+}
+
+#nums .key, #ops .key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ops {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    width: 46%;
+}
+
+#ops .key:nth-child(odd) {
+    background-color: #D34E47;
+}
+
+#ops .key:nth-child(even) {
+    background-color: #B52D26;
+}
+
+#ops .key:nth-child(1) {
+    grid-column: 1 / 7;
+    grid-row: 1;
+}
+
+#ops .key:nth-child(2) {
+    grid-column: 1 / 7;
+    grid-row: 2;
+}
+
+#ops .key:nth-child(3) {
+    grid-column: 1 / 7;
+    grid-row: 3/5;
+    background-color: #C43E37 ;
+}
+
+#ops .key:nth-child(4) {
+    grid-column: 7 / 13;
+    grid-row: 1;
+}
+
+#ops .key:nth-child(5) {
+    grid-column: 7 / 13;
+    grid-row: 2;
+}
+
+#ops .key:nth-child(6) {
+    grid-column: 7 / 13;
+    grid-row: 3;
+}
+
+#ops .key:nth-child(7) {
+    grid-column: 7 / 13;
+    grid-row: 4;
+}
+
+
+

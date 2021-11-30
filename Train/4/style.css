@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.square {
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    background-color: #D34E47;
+    margin: 20px;
+}
